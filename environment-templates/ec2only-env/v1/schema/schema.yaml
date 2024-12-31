@@ -4,6 +4,9 @@ schema:
   environment_input_type: "EC2EnvironmentInput"
   types:
     EC2EnvironmentInput:
+      type: object
+      description: "Input properties for my environment"
+      properties:
         AMI:
           description: "AMI used to launch the EC2 instances"
           type: string
