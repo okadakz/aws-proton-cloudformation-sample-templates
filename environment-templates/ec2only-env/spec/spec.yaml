@@ -1,0 +1,4 @@
+proton: EnvironmentSpec
+spec:
+  AMI: ami-ceafcba8
+  InstanceType: t2.small
