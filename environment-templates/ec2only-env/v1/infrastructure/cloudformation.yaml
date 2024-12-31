@@ -3,11 +3,11 @@ Parameters:
   AMI:
     Description: AMI ID
     Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
-    Default: environment.inputs.AMI
+    Default: '{{ environment.inputs.AMI }'
   InstanceType:
     Description: EC2 instance type
     Type: String
-    Default: environment.inputs.InstanceType
+    Default: '{{ environment.inputs.InstanceType }}'
 Resources:
   MyInstance:
     Type: AWS::EC2::Instance
